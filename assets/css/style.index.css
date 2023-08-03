@@ -17,6 +17,7 @@ main{
     align-items: center;
     width: 100%;
     height: 100vh;
+    gap: 3.5rem;
 }
 img{
     width: 31rem;
@@ -34,7 +35,7 @@ img{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    
+    gap: 2rem;
 }
 
 .input-box label{
@@ -59,7 +60,7 @@ img{
     width: 100%;
     font-size: 1.3rem;
     color: #f8fafc;
-    padding: 0.0.5rem;
+    padding: 0 0.5rem;
 }
 
 .input-field input::-webkit-outer-spin-button,
@@ -71,4 +72,19 @@ img{
     color: #cdb5e1;
     font-size: 1.3rem;
     padding: 0.6rem 1rem;
+}
+#calculate{
+    background-color: #fd1b1b;
+    border: none;
+    color: #f8fafc;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.input-field input:focus{
+    outline: none;
 }
