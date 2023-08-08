@@ -1,4 +1,5 @@
 const posts = [];
+let postIndex = -1
 
 function savePost() {
     const title = document.getElementById("title").value;
@@ -8,9 +9,22 @@ function savePost() {
     const date = document.getElementById("date").value;
 
     if(title && category && resume && author && date){
+        if(postIndex == -1){
         storePosts(title, category, resume, author, date)
         cleanFields()
         showPosts()
+        } else{
+            posts[postIndex] = {
+                title,
+                category,
+                resume,
+                author,
+                date,
+            }
+        }
+        cleanFields()
+        showPosts()
+        postIndex = -1;
     }else{
         alert("Preencha este campo")
     }
@@ -34,7 +48,7 @@ function storePosts(title, category, resume, author, date) {
         date,
     };
     posts.push(post)
-    console.log(posts)
+    console.log(post)
 }
 
 function showPosts() {
@@ -50,7 +64,7 @@ function showPosts() {
             <p><strong>Data de publicação: </strong>${post.date}</p>
 
             <button click="editPost(${index})">Editar</button>
-            <button click="deletePost(${index})">Excluir</button>
+            <button click="removePost(${index})">Excluir</button>
         </div>
         `;
         
@@ -58,3 +72,19 @@ function showPosts() {
 
     document.getElementById("list").innerHTML = showContent
 }
+
+function editPost(index) {
+    const post = posts[index];
+
+    document.getElementById("title").value = post.title;
+    document.getElementById("category").value = post.category;
+    document.getElementById("resume").value = post.resume;
+    document.getElementById("author").value = post.author;
+    document.getElementById("date").value = post.date;
+
+    postIndex = index;
+
+
+}
+
+function removePost(index)
