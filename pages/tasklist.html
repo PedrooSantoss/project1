@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.tasklist.css" />
-   <link rel="stylesheet" href="https://fontawesome.com/icons/plus?f=classic&s=solid" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <scrip src="/assets/javascript/takslist.js"></script>
     <title>Task List</title>
 </head>
@@ -13,11 +13,18 @@
             <div id="form">
                 <p id="msginvalida">Favor adicionar um titulo para lista</p>
                 <div>
-                <input type="text" id="boxtext" name="boxtext" placeholder="Adicione uma nova tarefa"/>
+                
                 </div>
                 <div id="orgbtn">
-                    <button onclick="bnt1" id="btn"><i class="fa-solid fa-plus"></i></button>
+                    <input type="text" id="boxtext" name="boxtext" placeholder="Adicione uma nova tarefa"/>
+                    <button onclick="bnt" id="btn"><i class="fa-solid fa-plus"></i></button>
                 </div>
+                <div id="buttons">
+                    <input type="text" id="boxtext1" name="boxtext1" placeholder="Nova tarefa"/>
+                    <button onclick="bnt1" id="btnVerify"><i class="fa-solid fa-check"></i></button>
+                    <button onclick="bnt2" id="btnAlteretion"><i class="fa-solid fa-pen"></i></button>
+                    <button onclick="bnt3" id="btnDelete"><i class="fa-solid fa-trash"></i></button>
+                 </div>
             </div> 
     </main>
 </body>

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 main{
     display: flex;
@@ -12,16 +12,21 @@ main{
     align-items: center;
     justify-content: center;
 }
+#orgbtn{
+    display: flex;
+    margin: 10px;
+}
 #boxtext{
-    background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: #f8fafc;
-    width: 750px;
+    color: #000000;
+    width: 621px;
     height: 70px;
     border-radius: 8px;
+    flex-direction: column;
+    margin-left: -8px;
+
 }
 #btn{
 background-color: #f5f5f5;
@@ -35,9 +40,65 @@ margin-left: 4px;
 border-radius: 8px;
 }
 #form{
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     padding: 20px;
     border-radius: 8px;
+    background-color: #fff;
+}
+#boxtext1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    width: 750px;
+    height: 70px;
+    border-radius: 8px;
+}
+#btnVerify{
     background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 50px;
+    height: 70px;
+    margin-left: 4px;
+    border-radius: 8px;
+}
+
+#btnAlteretion{
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 50px;
+    height: 70px;
+    margin-left: 4px;
+    border-radius: 8px;
+}
+
+#btnDelete{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 50px;
+    height: 70px;
+    margin-left: 4px;
+    border-radius: 8px;
+}
+
+#buttons{
+    display: flex;
+}
+
+input::placeholder{
+    color: black;
+}
+#boxtext1{
+    color: black;
 }
