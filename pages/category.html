@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,41 @@
     <link rel="stylesheet" href="../assets/css/style.category.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="container">
         <h1>🧳 Categorias & Produtos</h1>
         <div class="form-container">
             <h2>📁Criar categoria</h2>
-            <label for="">Nome da categoria</label>
+            <label for="categoryName">Nome da categoria</label>
             <input type="text" id="categoryName" required />
             <button class="btn">Criar Categoria</button>
         </div>
+        <h1>🧳 Categorias & Produtos</h1>
+        <div class="form-container">
+            <h1>📓Criar categoria</h2>
+                <div id="productInfos">
+                    <div class="productInputs">
+                        <label for="productName">Nome do produto</label>
+                        <input type="text" id="productName" required />
+                    </div>
+                    <div class="productInputs">
+                        <label for="productPrice">Preço do produto</label>
+                        <input type="number" id="productPrice" required />
+                    </div>
+                    
+                </div>
+                <label for="">Categoria:</label>
+                <select id="productCategory" required />
+                !--Will be dinamically filled via JS --
+                </select>
+                <button class="btn">Criar produto</button>
+        </div>
+        <div class="list-container">
+            <h2>📋 Categorias & Produtos</h2>
+            <ul id="categoriesList"></ul>
+        </div>
     </div>
 </body>
+
 </html>
